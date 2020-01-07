@@ -26,8 +26,30 @@
 //   console.log(`${key}: ${myObject[key]}`);
 // }
 
-// Arrays in Objects
+// * ARRAYS IN OBJECTS
 
-let meals = ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'];
+// let meals = ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'];
 
-console.log(meals[3]);
+// console.log(meals[3]);
+
+// * ARRAYS OF OBJECTS
+
+let benObject = {
+  name: 'Ben',
+  jobTitle: 'teacher'
+};
+
+let leeObject = {
+  name: 'Lee',
+  jobTitle: 'producer'
+};
+
+let nickObject = {
+  name: 'Nick',
+  jobTitle: 'ranger'
+};
+
+let peopleArray = [benObject, leeObject, nickObject];
+
+peopleArray.forEach(person => console.log(`${person.name}: ${person.jobTitle}`));
+
