@@ -32,24 +32,31 @@
 
 // console.log(meals[3]);
 
-// * ARRAYS OF OBJECTS
+// * ARRAYS OF OBJECTS & PROPERTIES THAT ARENT THERE
 
 let benObject = {
   name: 'Ben',
-  jobTitle: 'teacher'
+  jobTitle: 'teacher',
 };
 
 let leeObject = {
   name: 'Lee',
-  jobTitle: 'producer'
+  jobTitle: 'producer',
+  boss: false
 };
 
 let nickObject = {
   name: 'Nick',
-  jobTitle: 'ranger'
+  jobTitle: 'ranger',
+  boss: false
 };
 
 let peopleArray = [benObject, leeObject, nickObject];
 
-peopleArray.forEach(person => console.log(`${person.name}: ${person.jobTitle}`));
-
+peopleArray.forEach(person => {if (person.boss === false) {
+    console.log(`${person.jobTitle} ${person.name} reports to ${benObject.name}`);
+} else {
+    console.log(`${person.jobTitle} ${person.name} reports to nobody`);
+    }
+}
+);
