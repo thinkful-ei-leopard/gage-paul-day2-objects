@@ -14,14 +14,20 @@
 
 // * ITERATING OVER AN OBJECT'S PROPERTIES
 
-let myObject = {
-  foo: 'prop1',
-  bar: 'prop2',
-  fum: 'prop3',
-  quux: 'prop4',
-  spam: 'prop5'
-};
+// let myObject = {
+//   foo: 'prop1',
+//   bar: 'prop2',
+//   fum: 'prop3',
+//   quux: 'prop4',
+//   spam: 'prop5'
+// };
 
-for(const key in myObject) {
-  console.log(`${key}: ${myObject[key]}`);
-}
+// for(const key in myObject) {
+//   console.log(`${key}: ${myObject[key]}`);
+// }
+
+// Arrays in Objects
+
+let meals = ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'];
+
+console.log(meals[3]);
