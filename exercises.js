@@ -87,3 +87,45 @@ function decodeWords(sentence) {
 
 let test = decodeWords('craft block argon meter bells brown croon droop');
 console.log(test);
+
+
+// * FACTORY FUNCTIONS WITH LOTR
+
+// function createCharacter(name, nickname, race, origin, attack, defense, weapon) {
+//     return {
+//         name,
+//         nickname,
+//         race,
+//         origin,
+//         attack,
+//         defense,
+//         weapon,
+//         describe() {
+//             return `${name} is a(n) ${race} from ${origin} and uses ${weapon}`
+//         },
+//         evaluateFight(char) {
+//             if (this.attack - char.defense < 0 && char.attack - this.defense < 0) {
+//                 return `${char.nickname} takes 0 damage and ${this.nickname} receives 0 damage.`;
+//             } else if (this.attack - char.defense < 0) {
+//                 return `${char.nickname} takes 0 damage and ${this.nickname} receive ${char.attack - this.defense} damage.`;
+//             } else if (char.attack - this.defense < 0) {
+//                 return `${char.nickname} takes ${this.attack - char.defense} damage and ${this.nickname} receive 0 damage.`;
+//             } else {
+//                 return `${char.nickname} takes ${this.attack - char.defense} damage and ${this.nickname} receive ${char.attack - this.defense} damage.`;
+//             }
+//         }
+//     }
+// }
+
+// let characters = [
+//     createCharacter('Legolas', 'legolas', 'Elf', 'Woodland Realm', 8, 5, 'a Bow and Arrow'),
+//     createCharacter('Gandalf the White', 'gandalf', 'Wizard', 'Middle Earth', 10, 6, 'a Wooden Staff'),
+//     createCharacter('Bilbo Baggins', 'bilbo', 'Hobbit', 'The Shire', 2, 1, 'the Ring'),
+//     createCharacter('Frodo Baggins', 'frodo', 'Hobbit', 'The Shire', 3, 2), 'the String and Barrow Blade',
+//     createCharacter('Aragorn son of Arathorn', 'aragorn', 'Man', 'Dunnedain', 6, 8, 'Anduril'),
+//     createCharacter('Arwen Undomiel', 'Arry', 'Half-Elf', 'Rivendell', 6, 4, 'Hadhafang')
+// ]
+
+// console.log(characters.find(item => item.nickname === 'aragorn').describe());
+// let theHobbitses = characters.filter(item => item.race === 'Hobbit');
+// let strongAttackers = characters.filter(item => item.attack > 5);
