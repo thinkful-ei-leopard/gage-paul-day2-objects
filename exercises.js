@@ -63,30 +63,30 @@
 
 // * CRACKING THE CODE !!!!!!!!!!!!111111
 
-function decode(word) {
-  let wordObject = {
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4
-  };
-  if (word[0] !== 'a' && word[0] !== 'b' && word[0] !== 'c' && word[0] !== 'd') {
-    return ' ';
-  } else {
-    return word[wordObject[word[0]]];
-  }
-} 
+// function decode(word) {
+//   let wordObject = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4
+//   };
+//   if (word[0] !== 'a' && word[0] !== 'b' && word[0] !== 'c' && word[0] !== 'd') {
+//     return ' ';
+//   } else {
+//     return word[wordObject[word[0]]];
+//   }
+// } 
 
-function decodeWords(sentence) {
-  let splitSentence = sentence.split(' ');
-  let newArray = [];
-  splitSentence.forEach(word => newArray.push(decode(word)));
-  let finalArray = newArray.join('');
-  return finalArray;
-}
+// function decodeWords(sentence) {
+//   let splitSentence = sentence.split(' ');
+//   let newArray = [];
+//   splitSentence.forEach(word => newArray.push(decode(word)));
+//   let finalArray = newArray.join('');
+//   return finalArray;
+// }
 
-let test = decodeWords('craft block argon meter bells brown croon droop');
-console.log(test);
+// let test = decodeWords('craft block argon meter bells brown croon droop');
+// console.log(test);
 
 
 // * FACTORY FUNCTIONS WITH LOTR
